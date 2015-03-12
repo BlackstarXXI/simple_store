@@ -1,0 +1,7 @@
+table : Product
+
+ - id : auto inc_int
+ - title : string
+ - description : text
+ - price : decimal
+ - stock_quantity : integer
