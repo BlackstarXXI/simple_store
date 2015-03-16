@@ -28,6 +28,23 @@
   </tbody>
 </table>
 
+<p>
+  <% 100.times puts"Chunky Bacon\n" %>
+</p>
+
+<p>
+  <% @products.each do |product| %>
+    <% count += 1 %>
+    <% sum += product.price %>
+    <% quan_sum += product.stock_quantity %>
+  <% end %>
+  <% average = sum / count %>
+  <% puts "Average price: #{average}" %>
+  <% puts "Maximum price: #{(Products.price).max}" %>
+  <% puts "Total products: #{count}" %>
+  <% puts "Total quantity: #{quan_sum}" %>
+</p>
+
 <br>
 
 <%= link_to 'New Product', new_product_path %>
